@@ -1,0 +1,72 @@
+.banners {
+  padding-bottom: 72px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  &__item {
+    max-height: 300px;
+    padding: 76px 25px;
+    text-transform: uppercase;
+    background-size: cover;
+    border-radius: 4px;
+    @extend %bg-image;
+
+    &--first {
+      color: $white;
+    }
+  }
+
+  &__text,
+  &__link {
+    margin-bottom: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.1em;
+    @include line-clamp(1);
+  }
+
+  &__title {
+    max-width: 159px;
+    margin-bottom: 12px;
+    font-family: $ruda;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+    @include line-clamp(2);
+
+    &--first {
+      max-width: 346px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding-bottom: 6px;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      width: 163px;
+      height: 2px;
+      content: "";
+      background-color: $dark-500;
+      transition: width 0.4s;
+    }
+
+    &:hover::before {
+      width: 175px;
+    }
+
+    &--first::before {
+      background-color: $white;
+    }
+  }
+}

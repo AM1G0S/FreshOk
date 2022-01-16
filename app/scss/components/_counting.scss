@@ -1,0 +1,42 @@
+.counting {
+  display: flex;
+  align-items: flex-end;
+
+  &__input {
+    max-width: 36px;
+    height: 24px;
+    text-align: center;
+    background-color: rgba(99, 166, 14, 0.1);
+  }
+}
+
+.minus,
+.plus {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: $green-900;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    content: "";
+    transform: translateX(-50%);
+    @extend %bg-image;
+  }
+}
+
+.minus {
+  &::before {
+    background-image: url(../images/sprite.svg#minus);
+  }
+}
+
+.plus {
+  &::before {
+    background-image: url(../images/sprite.svg#plus);
+  }
+}

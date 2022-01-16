@@ -1,0 +1,29 @@
+.category {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 39px;
+
+  &__item {
+    padding: 10px 0;
+
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
+  }
+
+  &__btn {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: $dark-500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 3px solid transparent;
+    transition: color 0.5s, border-color 0.5s;
+
+    &:hover {
+      color: #4d800c;
+      border-color: #4d800c;
+    }
+  }
+}

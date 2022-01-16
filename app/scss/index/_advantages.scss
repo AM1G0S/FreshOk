@@ -1,0 +1,58 @@
+.advantages {
+  padding: 48px 0 28px;
+  background-color: $silver-100;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 264px;
+    width: 100%;
+    padding-left: 74px;
+    @include line-clamp(3);
+
+    &:not(:last-child) {
+      margin-right: 65px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      content: "";
+      @extend %bg-image;
+    }
+
+    &--scooter::before {
+      background-image: url(../images/sprite.svg#scooter);
+    }
+
+    &--return-box::before {
+      background-image: url(../images/sprite.svg#return-box);
+    }
+
+    &--hours::before {
+      background-image: url(../images/sprite.svg#24-hours);
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__text {
+    max-width: 190px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $dark-500;
+  }
+}

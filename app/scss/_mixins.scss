@@ -1,0 +1,26 @@
+@mixin max-w($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin max-h($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin min-h($width) {
+  @media screen and (max-width: calc($width + 1px)) {
+    @content;
+  }
+}
+
+@mixin line-clamp($lines-to-show) {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines-to-show;
+}

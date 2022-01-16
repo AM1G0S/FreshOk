@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+// ничего не понятно, то эти [class] нужны, то не нужны, так нужны или не нужны? Ты в одной проверке сказал когда их увидел, что вот хорошо что написал, а потом попросил удалить. Вадим сказал что в след видосах поймем все, но я чет не вдуплил.
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  letter-spacing: inherit;
+  border: none;
+}
+
+button {
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}

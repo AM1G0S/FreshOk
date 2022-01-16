@@ -1,0 +1,25 @@
+.brands {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__item {
+    max-width: 80px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,485 @@
+<section class="top-products section-padding" id="products" data-ref="mixitup-1">
+  <div class="container">
+
+    <h2 class="title">Топовые товары</h2>
+
+      <ul class="category">
+        <li class="category__item">
+          <button class="category__btn" type="button" data-filter="all">
+            Все товары
+          </button>
+        </li>
+        <li class="category__item">
+          <button class="category__btn" type="button" data-filter=".fruits">
+            Фрукты
+          </button>
+        </li>
+
+        <li class="category__item">
+          <button class="category__btn" type="button" data-filter=".vegetables">
+            ОВОЩИ
+          </button>
+        </li>
+
+        <li class="category__item">
+          <button class="category__btn" type="button" data-filter=".drinks">
+            Напитки
+          </button>
+        </li>
+
+        <li class="category__item">
+          <button class="category__btn" type="button" data-filter=".grocery">
+            БАКАЛЕЯ
+          </button>
+        </li>
+
+      </ul>
+
+    <ul class="top-products__content">
+
+      <li class="top-products__item mix fruits">
+        <article class="product-card">
+
+          <div class="badges">
+            <span class="badges__item badges__item--new">
+              Новинка
+            </span>
+            <span class="badges__item badges__item--sale">
+              -50%
+            </span>
+          </div>
+
+          <button class="product-card__like" type="button" aria-label="Добавить в избранное"
+            title="Добавить в избранное">
+            <svg class="product-card__icon">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </button>
+
+          <a href="#">
+            <!-- не получилось сделать ховер с иконкой -->
+            <img class="product-card__image" src="images/product-card/pineapple.jpg" alt="Фото ананаса" width="300"
+              height="225">
+          </a>
+
+          <h3 class="product-card__name" href="#">
+            Ананас, 1кг
+          </h3>
+
+          <div class="product-card__bottom">
+
+            <div class="product-card__offers">
+
+              <span class="product-card__price product-card__price--old">
+                1999
+                <span class="product-card__currency">₽</span>
+              </span>
+
+              <span class="product-card__price product-card__price--new">
+                999
+                <span class="product-card__currency">₽</span>
+              </span>
+
+            </div>
+
+            <div class="product-card__box">
+
+              <div class="counting">
+                <button class="minus">
+                  <span class="sr-only">убрать одну еденицу товара</span>
+                </button>
+
+                <input class="counting__input" type="text" value="1" maxlength="3">
+
+                <button class="plus">
+                  <span class="sr-only">добавить одну еденицу товара</span>
+                </button>
+              </div>
+
+              <button class="product-card__buy-btn" type="submit" aria-label="добавить в корзину"></button>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="top-products__item mix fruits">
+        <article class="product-card">
+
+          <button class="product-card__like" type="button" aria-label="Добавить в избранное"
+            title="Добавить в избранное">
+            <svg class="product-card__icon" aria-label="Перейти в корзину">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </button>
+
+          <a href="#">
+            <img class="product-card__image" src="images/product-card/lemon.jpg" alt="Фото лемона" width="300"
+              height="225">
+          </a>
+
+          <h3 class="product-card__name" href="#">
+            Лимон, 1кг
+          </h3>
+
+          <div class="product-card__bottom">
+
+            <div class="product-card__offers">
+              <span class="product-card__price product-card__price--new">
+                199
+                <span class="product-card__currency">₽</span>
+              </span>
+            </div>
+
+            <div class="product-card__box">
+
+              <div class="counting">
+                <button class="minus">
+                  <span class="sr-only">убрать одну еденицу товара</span>
+                </button>
+              
+                <input class="counting__input" type="text" value="1" maxlength="3">
+              
+                <button class="plus">
+                  <span class="sr-only">добавить одну еденицу товара</span>
+                </button>
+              </div>
+
+              <button class="product-card__buy-btn" type="submit" aria-label="добавить в корзину"></button>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="top-products__item mix fruits">
+        <article class="product-card">
+
+          <div class="badges">
+            <span class="badges__item badges__item--new">
+              хит
+            </span>
+          </div>
+
+          <button class="product-card__like" type="button" aria-label="Добавить в избранное"
+            title="Добавить в избранное">
+            <svg class="product-card__icon" aria-label="Перейти в корзину">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </button>
+
+          <a href="#">
+            <img class="product-card__image" src="images/product-card/dragon-fruit.jpg" alt="Фото непонятного фрукта"
+              width="300" height="225">
+          </a>
+
+          <h3 class="product-card__name" href="#">
+            Питахайя красная с белой мякотью, 1шт
+          </h3>
+
+          <div class="product-card__bottom">
+
+            <div class="product-card__offers">
+              <span class="product-card__price product-card__price--new">
+                1019
+                <span class="product-card__currency">₽</span>
+              </span>
+            </div>
+
+            <div class="product-card__box">
+
+              <div class="counting">
+                <button class="minus">
+                  <span class="sr-only">убрать одну еденицу товара</span>
+                </button>
+              
+                <input class="counting__input" type="text" value="1" maxlength="3">
+              
+                <button class="plus">
+                  <span class="sr-only">добавить одну еденицу товара</span>
+                </button>
+              </div>
+
+              <button class="product-card__buy-btn" type="submit" aria-label="добавить в корзину"></button>
+            </div>
+
+          </div>
+        </article>
+      </li>
+
+      <li class="top-products__item mix vegetables">
+        <article class="product-card">
+
+          <div class="badges">
+            <span class="badges__item badges__item--new">
+              Новинка
+            </span>
+          </div>
+
+          <button class="product-card__like" type="button" aria-label="Добавить в избранное"
+            title="Добавить в избранное">
+            <svg class="product-card__icon" aria-label="Перейти в корзину">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </button>
+
+          <a href="#">
+            <img class="product-card__image" src="images/product-card/paprik.jpg" alt="Фото паприки" width="300"
+              height="225">
+          </a>
+
+          <h3 class="product-card__name" href="#">
+            Перец оранжевый, 1кг
+          </h3>
+
+          <div class="product-card__bottom">
+
+            <div class="product-card__offers">
+              <span class="product-card__price product-card__price--new">
+                349
+                <span class="product-card__currency">₽</span>
+              </span>
+            </div>
+
+            <div class="product-card__box">
+
+              <div class="counting">
+                <button class="minus">
+                  <span class="sr-only">убрать одну еденицу товара</span>
+                </button>
+              
+                <input class="counting__input" type="text" value="1" maxlength="3">
+              
+                <button class="plus">
+                  <span class="sr-only">добавить одну еденицу товара</span>
+                </button>
+              </div>
+
+              <button class="product-card__buy-btn" type="submit" aria-label="добавить в корзину"></button>
+            </div>
+
+          </div>
+        </article>
+      </li>
+
+      <li class="top-products__item mix vegetables">
+        <article class="product-card">
+
+          <div class="badges">
+            <span class="badges__item badges__item--new">
+              хит
+            </span>
+          </div>
+
+          <button class="product-card__like" type="button" aria-label="Добавить в избранное"
+            title="Добавить в избранное">
+            <svg class="product-card__icon" aria-label="Перейти в корзину">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </button>
+
+          <a href="#">
+            <img class="product-card__image" src="images/product-card/carrot.jpg" alt="Фото марковки" width="300"
+              height="225">
+          </a>
+
+          <h3 class="product-card__name" href="#">
+            Морковь молодая с бабушкиной грядки, 1кг
+          </h3>
+
+          <div class="product-card__bottom">
+
+            <div class="product-card__offers">
+              <span class="product-card__price product-card__price--new">
+                49
+                <span class="product-card__currency">₽</span>
+              </span>
+            </div>
+
+            <div class="product-card__box">
+
+              <div class="counting">
+                <button class="minus">
+                  <span class="sr-only">убрать одну еденицу товара</span>
+                </button>
+              
+                <input class="counting__input" type="text" value="1" maxlength="3">
+              
+                <button class="plus">
+                  <span class="sr-only">добавить одну еденицу товара</span>
+                </button>
+              </div>
+
+              <button class="product-card__buy-btn" type="submit" aria-label="добавить в корзину"></button>
+            </div>
+
+          </div>
+        </article>
+      </li>
+
+      <li class="top-products__item mix drinks">
+        <article class="product-card">
+
+          <div class="badges">
+            <span class="badges__item badges__item--sale">
+              -30%
+            </span>
+          </div>
+
+          <button class="product-card__like" type="button" aria-label="Добавить в избранное">
+            <svg class="product-card__icon" aria-label="Перейти в корзину">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </button>
+
+          <a href="#">
+            <img class="product-card__image" src="images/product-card/juice.jpg" alt="Фото апельсинового сока"
+              width="300" height="225">
+          </a>
+
+          <h3 class="product-card__name" href="#">
+            Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...
+          </h3>
+
+          <div class="product-card__bottom">
+
+            <div class="product-card__offers">
+              <span class="product-card__price product-card__price--old">
+                299
+                <span class="product-card__currency">₽</span>
+              </span>
+              <span class="product-card__price product-card__price--new">
+                199
+                <span class="product-card__currency">₽</span>
+              </span>
+            </div>
+
+            <div class="product-card__box">
+
+              <div class="counting">
+                <button class="minus">
+                  <span class="sr-only">убрать одну еденицу товара</span>
+                </button>
+              
+                <input class="counting__input" type="text" value="1" maxlength="3">
+              
+                <button class="plus">
+                  <span class="sr-only">добавить одну еденицу товара</span>
+                </button>
+              </div>
+
+              <button class="product-card__buy-btn" type="submit" aria-label="добавить в корзину"></button>
+            </div>
+
+          </div>
+        </article>
+      </li>
+
+      <li class="top-products__item mix drinks">
+        <article class="product-card">
+
+          <div class="badges">
+            <span class="badges__item badges__item--new">
+              Новинка
+            </span>
+          </div>
+
+          <button class="product-card__like" type="button" aria-label="Добавить в избранное"
+            title="Добавить в избранное">
+            <svg class="product-card__icon" aria-label="Перейти в корзину">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </button>
+
+          <a href="#">
+            <img class="product-card__image" src="images/product-card/coffee.jpg" alt="Фото кофе" width="300"
+              height="225">
+          </a>
+
+          <h3 class="product-card__name" href="#">
+            Кофе с коноплей органический Caffé Salomoni 250г
+          </h3>
+
+          <div class="product-card__bottom">
+
+            <div class="product-card__offers">
+              <span class="product-card__price product-card__price--new">
+                877
+                <span class="product-card__currency">₽</span>
+              </span>
+            </div>
+
+            <div class="product-card__box">
+
+              <div class="counting">
+                <button class="minus">
+                  <span class="sr-only">убрать одну еденицу товара</span>
+                </button>
+              
+                <input class="counting__input" type="text" value="1" maxlength="3">
+              
+                <button class="plus">
+                  <span class="sr-only">добавить одну еденицу товара</span>
+                </button>
+              </div>
+
+              <button class="product-card__buy-btn" type="submit" aria-label="добавить в корзину"></button>
+            </div>
+
+          </div>
+        </article>
+      </li>
+
+      <li class="top-products__item mix grocery">
+        <article class="product-card">
+
+          <button class="product-card__like" type="button" aria-label="Добавить в избранное"
+            title="Добавить в избранное">
+            <svg class="product-card__icon" aria-label="Перейти в корзину">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </button>
+
+          <a href="#">
+            <img class="product-card__image" src="images/product-card/ketchup.jpg" alt="Фото кетчупа" width="300"
+              height="225">
+          </a>
+
+          <h3 class="product-card__name" href="#">
+            Кетчуп томатный детский органический Bio-Zentrale 500мл
+          </h3>
+
+          <div class="product-card__bottom">
+
+            <div class="product-card__offers">
+              <span class="product-card__price product-card__price--new">
+                600
+                <span class="product-card__currency">₽</span>
+              </span>
+            </div>
+
+            <div class="product-card__box">
+
+              <div class="counting">
+                <button class="minus">
+                  <span class="sr-only">убрать одну еденицу товара</span>
+                </button>
+              
+                <input class="counting__input" type="text" value="1" maxlength="3">
+              
+                <button class="plus">
+                  <span class="sr-only">добавить одну еденицу товара</span>
+                </button>
+              </div>
+
+              <button class="product-card__buy-btn" type="submit" aria-label="добавить в корзину"></button>
+            </div>
+
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <button class="button button--top-products" type="button" aria-label="Показать еще товары">
+      Показать еще
+    </button>
+
+</section>

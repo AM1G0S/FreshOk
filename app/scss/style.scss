@@ -1,0 +1,35 @@
+@import "fonts";
+@import "vars";
+@import "templates";
+@import "mixins";
+@import "reset";
+@import "library";
+@import "global";
+
+@import "components/header";
+
+@import "index/main-slider";
+
+@import "index/advantages";
+
+@import "index/top-products";
+
+@import "components/product-card";
+
+@import "components/category";
+
+@import "index/banners";
+
+@import "components/stock";
+
+@import "index/brands";
+
+@import "index/news";
+
+@import "components/footer";
+
+@import "components/basket";
+
+@import "components/counting";
+
+@import "mixitup";
